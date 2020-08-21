@@ -1,0 +1,436 @@
+:root{
+    --primary-color: rgb(156, 33, 33);
+    --secondary-color: rgb(221, 152, 48);
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(243, 241, 241);
+    
+}
+
+header{
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    }
+
+#navbar{
+    
+     display: flex; 
+    justify-content: space-between;
+     max-width: 1100px;
+    margin: auto;
+    
+}
+
+#logo img{
+    height: 50px;
+    width: 200px;
+    padding: 15px;
+}
+
+#external-links{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 650px;
+    top: 30px;
+}
+
+#external-links a{
+    color: #333;
+    padding-right: 10px;
+}
+#external-links .fb a:hover{
+    color: #3b5998;
+} 
+#external-links .insta a:hover{
+    color: #3f729b;
+}
+
+#external-links .twit a:hover{
+color: #38a1f3 ;
+}
+
+#external-links .utube a:hover{
+    color: #ff0000 ;
+    }
+
+    #external-links .whats a:hover{
+        color: #075e21 ;
+        }    
+
+    #menu-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .list-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        list-style: none;
+    }
+
+    .list-items li{
+        padding: 5;
+    }
+
+    .list-items li a{
+        text-decoration: none;
+        color: #333;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 8px 12px;
+    }
+    #menu-items ul li a.current{
+        background: var(--primary-color);
+        color: #fff;
+    }
+
+     #menu-items ul li a:hover{
+        color: #333;
+        background : #c4c4c4;
+        }
+
+    
+    #showcase{
+        color: #fff;
+        background: url('../img/featured.jpg') no-repeat center center/cover;
+        opacity: 0.9;
+    }
+
+    .container{
+        background: rgba(0, 0,0, 0.5);
+        z-index: 1;
+        height: 60vh;
+        
+    }
+    
+  .main-content{
+        max-width: 1100px;
+        margin: auto;
+        padding-top: 80px;
+
+    }
+
+    .showcase-content{
+        width: 60%;
+        padding: 20px 0;
+    }
+
+.sports{
+    display: inline;
+    font-size: 12px;
+    background: var(--secondary-color);
+    padding: 4px 4px;
+    border-radius: 30%;
+}
+
+.tech{
+    display: inline;
+    font-size: 12px;
+    background: rgb(65, 132, 255);
+    padding: 4px 4px;
+    border-radius: 30%;
+}
+
+.entertainment{
+    display: inline;
+    font-size: 12px;
+    background: rgb(243, 169, 181);
+    padding: 4px 4px;
+    border-radius: 30%;
+}
+
+
+.showcase-content h1{
+    padding-bottom: 10px;
+}
+
+.showcase-content p{
+    padding: 10px 0;
+    padding-bottom: 30px;
+} 
+
+.showcase-content a{
+    text-decoration: none;
+    padding-bottom: 20px ;
+    color: #fff;
+    background: var(--primary-color);
+    padding: 10px 15px;
+}
+h1{
+    max-width: 1100px;
+    margin: auto;
+    font-size: 26px;
+}
+
+#grid-menu{
+    max-width: 1100px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+  
+}
+article{
+     background: #fff;   
+     padding: 20px;
+}
+
+
+#container .picked-img img{
+    height: 200px;
+}
+
+#container article:first-child{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    grid-column: 1/ span 2;
+}
+
+#container article:last-child{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    grid-column: 2/ span 2;
+}
+
+#container article:nth-child(2){
+    background-color: #333;
+    color: #fff;
+}
+
+#container article:nth-child(6){
+    background-color: #333;
+    color: #fff;
+}
+
+#footer{
+    
+    background: #333;
+    color: #fff;
+}
+
+.news-footer{
+    max-width: 1100px;
+    margin: auto;
+}
+
+#main-footer{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 20px;
+}
+
+#main-footer .logo-2 img{
+    height: 50px;
+    width: 200px;
+    padding: 15px; 
+}
+.newsletter{
+    padding-left: 15px;
+}
+#main-footer h1{
+    padding:10px 0px 15px 0px;
+    font-size: 20px;
+}
+
+#main-footer p{
+    padding:0px 0px 10px 0px;
+}
+
+.newsletter input{
+    width: 100%;
+    height: 30px;
+}
+
+.newsletter  #btn{
+    border: none;
+    width: 100%;
+    height: 40px;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.newsletter  #btn:hover{
+    background: rgb(180, 53, 36);
+}
+.sitelinks{
+    padding-left: 20px;
+}
+
+.sitelinks ul{
+   list-style: none; 
+}
+
+.sitelinks ul li{
+    padding-bottom: 10px;
+    border-bottom: dotted #fff 1px ;
+    padding-top: 10px;
+}
+.sitelinks ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sitelinks ul li a:hover{
+    color: var(--primary-color);
+}
+
+.club button{
+    width: 100%;
+    height: 30px;
+    background: var(--secondary-color);
+    border: none;
+    color: #fff;
+}
+
+.club button:hover{
+    background: rgb(241, 172, 22);
+}
+
+.second-news-footer{
+padding-top: 20px;
+padding-bottom: 30px;
+}
+
+#secondary-footer{
+    background: rgb(68, 68, 68);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+
+}
+
+#about{
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+   
+}
+
+.about-our-organisation{
+
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    height: 80vh;
+    
+}
+
+.about-our-organisation h1{
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+.our-club{
+    background: var(--primary-color);
+    color: #fff;
+    height: 25vh;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.our-club h1{
+ font-size: 30px;
+ padding-bottom: 10px;
+}
+
+.our-club p{
+    padding-bottom: 15px;
+}
+
+.our-club button{
+    width: 100%;
+    height: 30px;
+    background: #333;
+    color: #fff;
+    border: none;
+}
+
+.our-club button:hover{
+    background:rgb(41, 40, 40);
+}
+
+#read-more-content{
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 20px;
+    padding: 30px;
+}
+.blog-section{
+    background: #fff;
+    padding: 20px;
+}
+
+.blog-section img{
+    height: 490px;
+    
+}
+
+.blog-section h1{
+    font-size: 40px;
+    padding: 10px 0px;
+}
+
+.my-section{
+    background:rgb(243, 241, 241);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 3px;
+}
+
+#categories ul{
+    background: #fff;
+    padding-bottom: 30px; 
+    list-style: none;
+    font-size:20px;
+    padding: 10px;
+}
+#categories ul li{
+    padding: 10px;
+    border-bottom: dotted #333 1px;
+}
+
+#categories ul li a{
+    text-decoration: none;
+    color: #333;
+    
+
+}
+#categories ul li a:hover{
+    color: black;
+}
+
+#categories .our-club{
+
+    background: var(--secondary-color);
+}
+    
